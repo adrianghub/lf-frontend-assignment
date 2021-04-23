@@ -1,0 +1,13 @@
+{
+    "name": "linkfactory/frontend-recruitment",
+    "description": "Task",
+    "authors": [
+        {
+            "name": "Pawel Kozik",
+            "email": "pawel@linkfactory.dk"
+        }
+    ],
+    "require": {
+        "twig/twig": "^3.3"
+    }
+}
