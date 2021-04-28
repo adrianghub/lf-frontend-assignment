@@ -6,16 +6,17 @@
     paragraphs (array of paragraphs)
 #}
 
-<section>
-    <h2>{{ heading }}</h2>
+<section class="content-wrapper">
+    <h2 class="content-heading">{{ heading }}</h2>
+    <p class="content-subheading">{{ subheading }}</p>
     {% for paragraph in paragraphs|slice(0, 1) %}
-        <p>{{ paragraph }}</p>
+        <p class="content">{{ paragraph }}</p>
     {% endfor %}
     <div class="more-content-wrapper hide">
         {% for paragraph in paragraphs|slice(1) %}
-            <p>{{ paragraph }}</p>
+            <p class="content">{{ paragraph }}</p>
         {%  endfor %}
     </div>
     <button class="read-more" onClick="toggleTextDisplay()">Read more</button>
-    <img src="{{ image }}" />
+    <img class="content-image" src="{{ image }}" />
 </section>
