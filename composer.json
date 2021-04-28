@@ -8,6 +8,10 @@
         }
     ],
     "require": {
-        "twig/twig": "^3.3"
+        "twig/twig": "^3.3",
+        "symfony/symfony": "^5.2"
+    },
+    "require-dev": {
+        "symfony/web-server-bundle": "^4.4"
     }
 }
