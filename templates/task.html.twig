@@ -6,4 +6,11 @@
     paragraphs (array of paragraphs)
 #}
 
-I render correctly
+<section>
+    <h2>{{ heading }}</h2>
+    {% for paragraph in paragraphs %}
+    <p>{{ paragraph }}</p>
+    {%  endfor %}
+    <button>Read more</button>
+    <img src="{{ image }}" />
+</section>
