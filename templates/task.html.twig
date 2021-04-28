@@ -8,9 +8,14 @@
 
 <section>
     <h2>{{ heading }}</h2>
-    {% for paragraph in paragraphs %}
-    <p>{{ paragraph }}</p>
-    {%  endfor %}
-    <button>Read more</button>
+    {% for paragraph in paragraphs|slice(0, 1) %}
+        <p>{{ paragraph }}</p>
+    {% endfor %}
+    <div class="more-content-wrapper hide">
+        {% for paragraph in paragraphs|slice(1) %}
+            <p>{{ paragraph }}</p>
+        {%  endfor %}
+    </div>
+    <button class="read-more" onClick="toggleTextDisplay()">Read more</button>
     <img src="{{ image }}" />
 </section>

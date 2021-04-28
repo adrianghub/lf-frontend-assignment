@@ -1,1 +1,4 @@
 /* put any css required here */
+.hide {
+  display : none;
+}
