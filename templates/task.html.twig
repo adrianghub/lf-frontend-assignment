@@ -6,4 +6,23 @@
     paragraphs (array of paragraphs)
 #}
 
-I render correctly
+<section class="content-wrapper">
+    <div class="content-wrapper__text">
+        <div class="content-wrapper__text__top">
+            <h2 class="content-heading">{{ heading }}</h2>
+            <p class="content-subheading">{{ subheading }}</p>
+        </div>
+        <div class="content-wrapper__text__bottom"">
+            {% for paragraph in paragraphs|slice(0, 1) %}
+                <p class="content">{{ paragraph }}</p>
+            {% endfor %}
+            <div class="more-content-wrapper more-content-wrapper--js hide">
+                {% for paragraph in paragraphs|slice(1) %}
+                    <p class="content">{{ paragraph }}</p>
+                {%  endfor %}
+            </div>
+        </div>
+    </div>
+    <button class="read-more">Read more</button>
+    <img class="content-image" src="{{ image }}" />
+</section>
