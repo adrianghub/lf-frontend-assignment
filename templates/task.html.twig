@@ -16,13 +16,13 @@
             {% for paragraph in paragraphs|slice(0, 1) %}
                 <p class="content">{{ paragraph }}</p>
             {% endfor %}
-            <div class="more-content-wrapper hide">
+            <div class="more-content-wrapper more-content-wrapper--js hide">
                 {% for paragraph in paragraphs|slice(1) %}
                     <p class="content">{{ paragraph }}</p>
                 {%  endfor %}
             </div>
         </div>
     </div>
-    <button class="read-more" onClick="toggleTextDisplay()">Read more</button>
+    <button class="read-more">Read more</button>
     <img class="content-image" src="{{ image }}" />
 </section>
