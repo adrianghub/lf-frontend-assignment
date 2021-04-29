@@ -12,6 +12,15 @@ html {
   font-family: 'Montserrat', sans-serif;
 }
 
+.content-wrapper__inner {
+  display: block;
+}
+
+.content-wrapper__inner__top {
+  flex-basis: 100%;
+  margin: 0;
+}
+
 .content-heading {
   font-size: 30px;
   font-weight: 700;
@@ -46,6 +55,7 @@ html {
 }
 
 .content-image {
+  position: static;
   width: 320px;
 }
 
@@ -56,6 +66,19 @@ html {
     margin: 60px auto;
   }
 
+  .content-wrapper__text {
+    display: flex;
+  }
+
+  .content-wrapper__text__top {
+    flex-basis:320px;
+    margin-right:32px;
+  }
+
+  .content-wrapper__text__bottom {
+    flex-basis:674px;
+  }
+
   .read-more {
     display: none;
   }
@@ -63,4 +86,10 @@ html {
   .hide {
     display: block;
   }
+
+  .content-image {
+    position:absolute;
+    top:270px;
+  }
+
 }
