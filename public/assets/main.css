@@ -71,7 +71,7 @@ html {
 
 .content-image {
   position: static;
-  width: 320px;
+  width: 335px;
 }
 
 @media (min-width: 1366px) {
@@ -105,6 +105,6 @@ html {
   .content-image {
     position:absolute;
     top:270px;
+    width: 320px;
   }
-
 }
