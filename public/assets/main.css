@@ -22,6 +22,7 @@ html {
 }
 
 .content-heading {
+  color: #010101;
   font-size: 30px;
   font-weight: 700;
   font-family: inherit;
@@ -30,6 +31,7 @@ html {
 }
 
 .content-subheading {
+  color: #010101;
   font-size: 20px;
   font-family: inherit;
   font-weight: 400;
@@ -43,6 +45,7 @@ html {
 }
 
 .content {
+  color: #010101;
   font-family: inherit;
   margin-top: 20px;
   line-height: 24px;
